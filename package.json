@@ -32,6 +32,11 @@
     "esbuild": "^0.20.0",
     "nodemon": "^3.0.3",
     "npm-run-all2": "^6.1.2",
+    "supabase": "^2.62.5",
     "typescript": "^5.3.2"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.84.0",
+    "mangopay4-nodejs-sdk": "^1.64.0"
   }
 }

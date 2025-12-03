@@ -1,0 +1,1380 @@
+---
+alwaysApply: true
+---
+
+### Install Dependencies and Build
+
+Source: https://github.com/forestadmin/agent-nodejs/blob/main/packages/_example/README.md
+
+Installs project dependencies using Yarn, auto-links packages, and starts the build process with watch mode.
+
+```bash
+yarn && yarn bootstrap
+yarn build:watch
+```
+
+---
+
+### Database Setup and Seeding
+
+Source: https://github.com/forestadmin/agent-nodejs/blob/main/packages/_example/README.md
+
+Starts required databases in Docker containers and seeds them with initial data.
+
+```bash
+docker compose up -d
+yarn db:seed
+```
+
+---
+
+### Run the Agent
+
+Source: https://github.com/forestadmin/agent-nodejs/blob/main/packages/_example/README.md
+
+Starts the development server for the Forest Admin agent.
+
+```bash
+yarn start
+```
+
+---
+
+### Agent Node.js Setup and Initialization
+
+Source: https://github.com/forestadmin/agent-nodejs/blob/main/packages/datasource-sql/README.md
+
+This snippet demonstrates how to set up and initialize the Agent Node.js for Forest Admin. It covers installing dependencies and basic configuration.
+
+```javascript
+npm install forest-agent --save
+
+const forest = require('forest-agent');
+
+forest.init({
+  // Your Forest Admin project URL
+  projectUrl: 'YOUR_PROJECT_URL',
+  // Your Forest Admin authentication token
+  authenticationToken: 'YOUR_AUTHENTICATION_TOKEN',
+  // Optional: Specify the agent name
+  agentName: 'my-node-agent'
+});
+
+console.log('Forest Agent initialized successfully!');
+```
+
+---
+
+### Agent Node.js Setup and Initialization
+
+Source: https://github.com/forestadmin/agent-nodejs/blob/main/packages/datasource-replica/README.md
+
+This snippet demonstrates how to set up and initialize the Agent Node.js for Forest Admin. It covers installing dependencies and basic configuration.
+
+```javascript
+npm install forest-agent --save
+
+const forest = require('forest-agent');
+
+forest.init({
+  // Your Forest Admin project URL
+  projectUrl: 'YOUR_PROJECT_URL',
+  // Your Forest Admin authentication token
+  authenticationToken: 'YOUR_AUTHENTICATION_TOKEN',
+  // Optional: Specify the agent name
+  agentName: 'my-node-agent'
+});
+
+console.log('Forest Agent initialized successfully!');
+```
+
+---
+
+### Agent Node.js Setup and Initialization
+
+Source: https://github.com/forestadmin/agent-nodejs/blob/main/packages/plugin-export-advanced/README.md
+
+This snippet demonstrates how to set up and initialize the Agent Node.js for Forest Admin. It covers installing dependencies and basic configuration.
+
+```javascript
+npm install forest-agent --save
+
+const forest = require('forest-agent');
+
+forest.init({
+  // Your Forest Admin project URL
+  projectUrl: 'YOUR_PROJECT_URL',
+  // Your Forest Admin authentication token
+  authenticationToken: 'YOUR_AUTHENTICATION_TOKEN',
+  // Optional: Specify the agent name
+  agentName: 'my-node-agent'
+});
+
+console.log('Forest Agent initialized successfully!');
+```
+
+---
+
+### Agent Node.js Setup and Initialization
+
+Source: https://github.com/forestadmin/agent-nodejs/blob/main/packages/datasource-sequelize/README.md
+
+This snippet demonstrates how to set up and initialize the Agent Node.js for Forest Admin. It covers installing dependencies and basic configuration.
+
+```javascript
+npm install forest-agent --save
+
+const forest = require('forest-agent');
+
+forest.init({
+  // Your Forest Admin project URL
+  projectUrl: 'YOUR_PROJECT_URL',
+  // Your Forest Admin authentication token
+  authenticationToken: 'YOUR_AUTHENTICATION_TOKEN',
+  // Optional: Specify the agent name
+  agentName: 'my-node-agent'
+});
+
+console.log('Forest Agent initialized successfully!');
+```
+
+---
+
+### Navigate to Example Directory
+
+Source: https://github.com/forestadmin/agent-nodejs/blob/main/packages/_example/README.md
+
+Changes the current directory to the '\_example' package within the agent-nodejs project.
+
+```bash
+cd packages/_example
+```
+
+---
+
+### Project Installation
+
+Source: https://github.com/forestadmin/agent-nodejs/wiki/Home
+
+Installs project dependencies and bootstraps the project using Yarn.
+
+```bash
+yarn install && yarn bootstrap
+```
+
+---
+
+### Agent Node.js Setup and Initialization
+
+Source: https://github.com/forestadmin/agent-nodejs/blob/main/packages/datasource-dummy/README.md
+
+This snippet demonstrates how to set up and initialize the Agent Node.js for Forest Admin. It covers installing dependencies and basic configuration.
+
+```javascript
+npm install forest-agent --save
+
+const forest = require('forest-agent');
+
+forest.init({
+  // Your Forest Admin project URL
+  projectUrl: 'YOUR_PROJECT_URL',
+  // Your Forest Admin authentication token
+  authenticationToken: 'YOUR_AUTHENTICATION_TOKEN',
+  // Optional: Specify the agent name
+  agentName: 'my-node-agent'
+});
+
+console.log('Forest Agent initialized successfully!');
+```
+
+---
+
+### Agent Node.js Setup and Initialization
+
+Source: https://github.com/forestadmin/agent-nodejs/blob/main/packages/plugin-aws-s3/README.md
+
+This snippet demonstrates how to set up and initialize the Agent Node.js for Forest Admin. It covers installing dependencies and basic configuration.
+
+```javascript
+npm install forest-agent --save
+
+const forest = require('forest-agent');
+
+forest.init({
+  // Your Forest Admin project URL
+  projectUrl: 'YOUR_PROJECT_URL',
+  // Your Forest Admin authentication token
+  authenticationToken: 'YOUR_AUTHENTICATION_TOKEN',
+  // Optional: Specify the agent name
+  agentName: 'my-node-agent'
+});
+
+console.log('Forest Agent initialized successfully!');
+```
+
+---
+
+### Project Installation
+
+Source: https://github.com/forestadmin/agent-nodejs/blob/main/README.md
+
+Installs and bootstraps the Forest Admin agent-nodejs project dependencies using Yarn.
+
+```bash
+yarn install && yarn bootstrap
+```
+
+---
+
+### Agent Node.js Setup and Initialization
+
+Source: https://github.com/forestadmin/agent-nodejs/blob/main/packages/datasource-mongo/README.md
+
+This snippet demonstrates how to set up and initialize the Agent Node.js for Forest Admin. It covers installing dependencies and basic configuration.
+
+```javascript
+npm install forest-agent --save
+
+const forest = require('forest-agent');
+
+forest.init({
+  // Your Forest Admin project URL
+  projectUrl: 'YOUR_PROJECT_URL',
+  // Your Forest Admin authentication token
+  authenticationToken: 'YOUR_AUTHENTICATION_TOKEN',
+  // Optional: Specify the agent name
+  agentName: 'my-node-agent'
+});
+
+console.log('Forest Agent initialized successfully!');
+```
+
+---
+
+### Agent Node.js Setup and Initialization
+
+Source: https://github.com/forestadmin/agent-nodejs/blob/main/packages/agent/README.md
+
+This snippet demonstrates how to set up and initialize the Agent Node.js for Forest Admin. It covers installing dependencies and basic configuration.
+
+```javascript
+npm install forest-agent --save
+
+const forest = require('forest-agent');
+
+forest.init({
+  // Your Forest Admin project URL
+  projectUrl: 'YOUR_PROJECT_URL',
+  // Your Forest Admin authentication token
+  authenticationToken: 'YOUR_AUTHENTICATION_TOKEN',
+  // Optional: Specify the agent name
+  agentName: 'my-node-agent'
+});
+
+console.log('Forest Agent initialized successfully!');
+```
+
+---
+
+### Agent Node.js Setup and Initialization
+
+Source: https://github.com/forestadmin/agent-nodejs/blob/main/packages/datasource-customizer/README.md
+
+This snippet demonstrates how to set up and initialize the Agent Node.js for Forest Admin. It covers installing dependencies and basic configuration.
+
+```javascript
+npm install forest-agent --save
+
+const forest = require('forest-agent');
+
+forest.init({
+  // Your Forest Admin project URL
+  projectUrl: 'YOUR_PROJECT_URL',
+  // Your Forest Admin authentication token
+  authenticationToken: 'YOUR_AUTHENTICATION_TOKEN',
+  // Optional: Specify the agent name
+  agentName: 'my-node-agent'
+});
+
+console.log('Forest Agent initialized successfully!');
+```
+
+---
+
+### AgentBuilder Constructor and Basic Usage
+
+Source: https://github.com/forestadmin/agent-nodejs/wiki/@forestadmin.agent.default
+
+Demonstrates how to create a new Forest Admin agent using the AgentBuilder. It shows the basic structure for adding a datasource and starting the agent. The constructor accepts an options object with default values for clientId, forestServerUrl, logger, prefix, schemaPath, and permissionsCacheDurationInSeconds.
+
+```javascript
+import { AgentBuilder } from "@forestadmin/agent";
+import { Datasource } from "./some-datasource"; // Assuming Datasource is defined elsewhere
+
+const options = {
+  // Your agent options here
+};
+
+const agent = new AgentBuilder(options).addDatasource(new Datasource()).start();
+```
+
+---
+
+### Registering a Model with Forest Admin
+
+Source: https://github.com/forestadmin/agent-nodejs/blob/main/packages/datasource-sql/README.md
+
+This example shows how to register a data model with Forest Admin using the Agent Node.js. This allows Forest Admin to display and manage your data.
+
+```javascript
+const forest = require("forest-agent");
+
+// Assuming you have a Mongoose model named 'User'
+const User = require("./models/User");
+
+forest.collection("users", {
+  // Define the schema for your model
+  schema: {
+    name: "string",
+    email: "string",
+    createdAt: "date",
+  },
+  // Define how to fetch records
+  actions: {
+    list: async (req, res) => {
+      try {
+        const users = await User.find({});
+        res.success(users);
+      } catch (error) {
+        res.error(error);
+      }
+    },
+    // Add other actions like create, update, delete as needed
+  },
+});
+
+console.log("User collection registered with Forest Admin.");
+```
+
+---
+
+### Registering a Model with Forest Admin
+
+Source: https://github.com/forestadmin/agent-nodejs/blob/main/packages/plugin-export-advanced/README.md
+
+This example shows how to register a data model with Forest Admin using the Agent Node.js. This allows Forest Admin to display and manage your data.
+
+```javascript
+const forest = require("forest-agent");
+
+// Assuming you have a Mongoose model named 'User'
+const User = require("./models/User");
+
+forest.collection("users", {
+  // Define the schema for your model
+  schema: {
+    name: "string",
+    email: "string",
+    createdAt: "date",
+  },
+  // Define how to fetch records
+  actions: {
+    list: async (req, res) => {
+      try {
+        const users = await User.find({});
+        res.success(users);
+      } catch (error) {
+        res.error(error);
+      }
+    },
+    // Add other actions like create, update, delete as needed
+  },
+});
+
+console.log("User collection registered with Forest Admin.");
+```
+
+---
+
+### AgentBuilder API Documentation
+
+Source: https://github.com/forestadmin/agent-nodejs/wiki/@forestadmin.agent.default
+
+Provides API documentation for the AgentBuilder class, including its constructor, properties, and methods. This section details the parameters for the constructor, the types and descriptions of various properties, and the functionality of methods like addDatasource, customizeCollection, start, and stop.
+
+```APIDOC
+Class: default (AgentBuilder)
+
+Description: Allow to create a new Forest Admin agent from scratch. Builds the application by composing and configuring all the collection decorators.
+
+Constructor:
+  new default(options: AgentOptions)
+    Description: Create a new Agent Builder.
+    If any options are missing, the default will be applied:
+      clientId: null,
+      forestServerUrl: 'https://api.forestadmin.com',
+      logger: (level, data) => console.error(OptionsUtils.loggerPrefix[level], data),
+      prefix: '/forest',
+      schemaPath: '.forestadmin-schema.json',
+      permissionsCacheDurationInSeconds: 15 * 60
+    Example:
+      new AgentBuilder(options)
+       .addDatasource(new Datasource())
+       .start();
+    Parameters:
+      options: AgentOptions - options for the agent builder
+    Defined in:
+      packages/agent/src/builder/agent.ts:84
+
+Properties:
+  action: default<default>
+    Defined in:
+      packages/agent/src/builder/agent.ts:41
+  compositeDatasource: default<Collection>
+    Defined in:
+      packages/agent/src/builder/agent.ts:38
+  earlyComputed: default<default>
+    Defined in:
+      packages/agent/src/builder/agent.ts:42
+  earlyOpEmulate: default<default>
+    Defined in:
+      packages/agent/src/builder/agent.ts:43
+  earlyOpReplace: default<default>
+    Defined in:
+      packages/agent/src/builder/agent.ts:44
+  forestAdminHttpDriver: default
+    Defined in:
+      packages/agent/src/builder/agent.ts:35
+  lateComputed: default<default>
+    Defined in:
+      packages/agent/src/builder/agent.ts:46
+  lateOpEmulate: default<default>
+    Defined in:
+      packages/agent/src/builder/agent.ts:47
+  lateOpReplace: default<default>
+    Defined in:
+      packages/agent/src/builder/agent.ts:48
+  publication: default<default>
+    Defined in:
+      packages/agent/src/builder/agent.ts:49
+  relation: default<default>
+    Defined in:
+      packages/agent/src/builder/agent.ts:50
+  rename: default<default>
+    Defined in:
+      packages/agent/src/builder/agent.ts:51
+  search: default<default>
+    Defined in:
+      packages/agent/src/builder/agent.ts:52
+  segment: default<default>
+    Defined in:
+      packages/agent/src/builder/agent.ts:53
+  sortEmulate: default<default>
+    Defined in:
+      packages/agent/src/builder/agent.ts:54
+  write: default<default>
+    Defined in:
+      packages/agent/src/builder/agent.ts:55
+
+Accessors:
+  httpCallback: default
+    Defined in:
+      packages/agent/src/builder/agent.ts:36
+
+Methods:
+  addDatasource(datasource: Datasource): default<default>
+    Description: Adds a datasource to the agent.
+    Parameters:
+      datasource: Datasource - The datasource to add.
+    Defined in:
+      packages/agent/src/builder/agent.ts:95
+
+  customizeCollection(collection: Collection, customization: CollectionCustomize):
+    Description: Customizes a collection.
+    Parameters:
+      collection: Collection - The collection to customize.
+      customization: CollectionCustomize - The customization options.
+    Defined in:
+      packages/agent/src/builder/agent.ts:105
+
+  start(): Promise<void>
+    Description: Starts the Forest Admin agent.
+    Returns: Promise<void>
+    Defined in:
+      packages/agent/src/builder/agent.ts:115
+
+  stop(): Promise<void>
+    Description: Stops the Forest Admin agent.
+    Returns: Promise<void>
+    Defined in:
+      packages/agent/src/builder/agent.ts:125
+
+```
+
+---
+
+### Registering a Model with Forest Admin
+
+Source: https://github.com/forestadmin/agent-nodejs/blob/main/packages/datasource-dummy/README.md
+
+This example shows how to register a data model with Forest Admin using the Agent Node.js. This allows Forest Admin to display and manage your data.
+
+```javascript
+const forest = require("forest-agent");
+
+// Assuming you have a Mongoose model named 'User'
+const User = require("./models/User");
+
+forest.collection("users", {
+  // Define the schema for your model
+  schema: {
+    name: "string",
+    email: "string",
+    createdAt: "date",
+  },
+  // Define how to fetch records
+  actions: {
+    list: async (req, res) => {
+      try {
+        const users = await User.find({});
+        res.success(users);
+      } catch (error) {
+        res.error(error);
+      }
+    },
+    // Add other actions like create, update, delete as needed
+  },
+});
+
+console.log("User collection registered with Forest Admin.");
+```
+
+---
+
+### Registering a Model with Forest Admin
+
+Source: https://github.com/forestadmin/agent-nodejs/blob/main/packages/datasource-replica/README.md
+
+This example shows how to register a data model with Forest Admin using the Agent Node.js. This allows Forest Admin to display and manage your data.
+
+```javascript
+const forest = require("forest-agent");
+
+// Assuming you have a Mongoose model named 'User'
+const User = require("./models/User");
+
+forest.collection("users", {
+  // Define the schema for your model
+  schema: {
+    name: "string",
+    email: "string",
+    createdAt: "date",
+  },
+  // Define how to fetch records
+  actions: {
+    list: async (req, res) => {
+      try {
+        const users = await User.find({});
+        res.success(users);
+      } catch (error) {
+        res.error(error);
+      }
+    },
+    // Add other actions like create, update, delete as needed
+  },
+});
+
+console.log("User collection registered with Forest Admin.");
+```
+
+---
+
+### Registering a Model with Forest Admin
+
+Source: https://github.com/forestadmin/agent-nodejs/blob/main/packages/datasource-sequelize/README.md
+
+This example shows how to register a data model with Forest Admin using the Agent Node.js. This allows Forest Admin to display and manage your data.
+
+```javascript
+const forest = require("forest-agent");
+
+// Assuming you have a Mongoose model named 'User'
+const User = require("./models/User");
+
+forest.collection("users", {
+  // Define the schema for your model
+  schema: {
+    name: "string",
+    email: "string",
+    createdAt: "date",
+  },
+  // Define how to fetch records
+  actions: {
+    list: async (req, res) => {
+      try {
+        const users = await User.find({});
+        res.success(users);
+      } catch (error) {
+        res.error(error);
+      }
+    },
+    // Add other actions like create, update, delete as needed
+  },
+});
+
+console.log("User collection registered with Forest Admin.");
+```
+
+---
+
+### Registering a Model with Forest Admin
+
+Source: https://github.com/forestadmin/agent-nodejs/blob/main/packages/datasource-mongo/README.md
+
+This example shows how to register a data model with Forest Admin using the Agent Node.js. This allows Forest Admin to display and manage your data.
+
+```javascript
+const forest = require("forest-agent");
+
+// Assuming you have a Mongoose model named 'User'
+const User = require("./models/User");
+
+forest.collection("users", {
+  // Define the schema for your model
+  schema: {
+    name: "string",
+    email: "string",
+    createdAt: "date",
+  },
+  // Define how to fetch records
+  actions: {
+    list: async (req, res) => {
+      try {
+        const users = await User.find({});
+        res.success(users);
+      } catch (error) {
+        res.error(error);
+      }
+    },
+    // Add other actions like create, update, delete as needed
+  },
+});
+
+console.log("User collection registered with Forest Admin.");
+```
+
+---
+
+### Registering a Model with Forest Admin
+
+Source: https://github.com/forestadmin/agent-nodejs/blob/main/packages/datasource-customizer/README.md
+
+This example shows how to register a data model with Forest Admin using the Agent Node.js. This allows Forest Admin to display and manage your data.
+
+```javascript
+const forest = require("forest-agent");
+
+// Assuming you have a Mongoose model named 'User'
+const User = require("./models/User");
+
+forest.collection("users", {
+  // Define the schema for your model
+  schema: {
+    name: "string",
+    email: "string",
+    createdAt: "date",
+  },
+  // Define how to fetch records
+  actions: {
+    list: async (req, res) => {
+      try {
+        const users = await User.find({});
+        res.success(users);
+      } catch (error) {
+        res.error(error);
+      }
+    },
+    // Add other actions like create, update, delete as needed
+  },
+});
+
+console.log("User collection registered with Forest Admin.");
+```
+
+---
+
+### Registering a Model with Forest Admin
+
+Source: https://github.com/forestadmin/agent-nodejs/blob/main/packages/plugin-aws-s3/README.md
+
+This example shows how to register a data model with Forest Admin using the Agent Node.js. This allows Forest Admin to display and manage your data.
+
+```javascript
+const forest = require("forest-agent");
+
+// Assuming you have a Mongoose model named 'User'
+const User = require("./models/User");
+
+forest.collection("users", {
+  // Define the schema for your model
+  schema: {
+    name: "string",
+    email: "string",
+    createdAt: "date",
+  },
+  // Define how to fetch records
+  actions: {
+    list: async (req, res) => {
+      try {
+        const users = await User.find({});
+        res.success(users);
+      } catch (error) {
+        res.error(error);
+      }
+    },
+    // Add other actions like create, update, delete as needed
+  },
+});
+
+console.log("User collection registered with Forest Admin.");
+```
+
+---
+
+### Registering a Model with Forest Admin
+
+Source: https://github.com/forestadmin/agent-nodejs/blob/main/packages/agent/README.md
+
+This example shows how to register a data model with Forest Admin using the Agent Node.js. This allows Forest Admin to display and manage your data.
+
+```javascript
+const forest = require("forest-agent");
+
+// Assuming you have a Mongoose model named 'User'
+const User = require("./models/User");
+
+forest.collection("users", {
+  // Define the schema for your model
+  schema: {
+    name: "string",
+    email: "string",
+    createdAt: "date",
+  },
+  // Define how to fetch records
+  actions: {
+    list: async (req, res) => {
+      try {
+        const users = await User.find({});
+        res.success(users);
+      } catch (error) {
+        res.error(error);
+      }
+    },
+    // Add other actions like create, update, delete as needed
+  },
+});
+
+console.log("User collection registered with Forest Admin.");
+```
+
+---
+
+### Array.fill Method
+
+Source: https://github.com/forestadmin/agent-nodejs/wiki/@forestadmin.datasource-toolkit.Projection
+
+The `fill` method changes all elements in an array to a static value, from a start index to an end index, and returns the modified array.
+
+```APIDOC
+fill(value: string, start?: number, end?: number): Projection
+Changes all array elements from `start` to `end` index to a static `value` and returns the modified array
+Parameters:
+- value: value to fill array section with
+- start?: index to start filling the array at. If start is negative, it is treated as length+start where length is the length of the array.
+- end?: index to stop filling the array at. If end is negative, it is treated as length+end.
+Returns: Projection
+Inherited from: Array.fill
+Defined in: node_modules/typescript/lib/lib.es2015.core.d.ts:53
+```
+
+---
+
+### TypeScript Array indexOf Method
+
+Source: https://github.com/forestadmin/agent-nodejs/wiki/@forestadmin.datasource-toolkit.Projection
+
+The `indexOf` method returns the first index at which a given element can be found in the array, or -1 if it is not present. It accepts the element to search for and an optional starting index.
+
+```APIDOC
+indexOf(searchElement: string, fromIndex?: number): number
+
+Parameters:
+  searchElement: The element to locate in the array.
+  fromIndex: Optional. The array index at which to begin the search.
+
+Returns:
+  The first index at which a given element can be found in the array; otherwise, -1.
+
+Inherited from:
+  Array.indexOf
+
+Defined in:
+  node_modules/typescript/lib/lib.es5.d.ts:1365
+```
+
+---
+
+### ForestAdmin Agent Commands
+
+Source: https://github.com/forestadmin/agent-nodejs/blob/main/packages/forest-cloud/README.md
+
+This section details the available commands for the ForestAdmin agent package, including bootstrapping, updating typings, and logging in.
+
+```APIDOC
+bootstrap
+  -e, --env-secret <environment-secret-key> (Mandatory)
+    - Logs into ForestAdmin.
+    - Creates a 'cloud-customizer' folder.
+    - Sets up the .env file with FOREST_ENV_SECRET and authentication token.
+    - Generates typings from your database.
+
+update-typings
+  - Generates typings from the database structure and code customizations.
+
+login
+  - Prompts the user for authentication and refreshes the authentication token.
+```
+
+---
+
+### Forest Admin Agent API Documentation
+
+Source: https://github.com/forestadmin/agent-nodejs/blob/main/packages/datasource-sequelize/README.md
+
+This section details the core API methods provided by the Forest Admin Agent for Node.js, covering initialization, collection registration, and action handling.
+
+```APIDOC
+ForestAgent:
+  __init__(options: object)
+    Initializes the Forest Admin Agent.
+    Options:
+      projectUrl (string): The URL of your Forest Admin project.
+      authenticationToken (string): The authentication token for your project.
+      agentName (string, optional): The name of the agent.
+
+  collection(name: string, definition: object)
+    Registers a data collection (model) with Forest Admin.
+    Parameters:
+      name (string): The name of the collection (e.g., 'users', 'products').
+      definition (object): An object defining the collection's schema and actions.
+        schema (object): Defines the fields and their types for the collection.
+          Example: { name: 'string', email: 'string', createdAt: 'date' }
+        actions (object): Defines the operations that can be performed on the collection.
+          list (function): Function to fetch a list of records. Receives (req, res) and should call res.success(records) or res.error(error).
+          get (function, optional): Function to fetch a single record by ID.
+          create (function, optional): Function to create a new record.
+          update (function, optional): Function to update an existing record.
+          delete (function, optional): Function to delete a record.
+
+  // Example of an action handler signature:
+  // async (req, res) => {
+  //   try {
+  //     // Fetch data from your database
+  //     const records = await YourModel.find({});
+  //     res.success(records);
+  //   } catch (error) {
+  //     res.error(error);
+  //   }
+  // }
+
+  // Response object methods:
+  // res.success(data: any, count?: number)
+  //   Sends a successful response with the provided data.
+  //   count: Optional total number of records for pagination.
+  // res.error(error: Error | string)
+  //   Sends an error response.
+```
+
+---
+
+### Forest Admin Agent API Documentation
+
+Source: https://github.com/forestadmin/agent-nodejs/blob/main/packages/datasource-replica/README.md
+
+This section details the core API methods provided by the Forest Admin Agent for Node.js, covering initialization, collection registration, and action handling.
+
+```APIDOC
+ForestAgent:
+  __init__(options: object)
+    Initializes the Forest Admin Agent.
+    Options:
+      projectUrl (string): The URL of your Forest Admin project.
+      authenticationToken (string): The authentication token for your project.
+      agentName (string, optional): The name of the agent.
+
+  collection(name: string, definition: object)
+    Registers a data collection (model) with Forest Admin.
+    Parameters:
+      name (string): The name of the collection (e.g., 'users', 'products').
+      definition (object): An object defining the collection's schema and actions.
+        schema (object): Defines the fields and their types for the collection.
+          Example: { name: 'string', email: 'string', createdAt: 'date' }
+        actions (object): Defines the operations that can be performed on the collection.
+          list (function): Function to fetch a list of records. Receives (req, res) and should call res.success(records) or res.error(error).
+          get (function, optional): Function to fetch a single record by ID.
+          create (function, optional): Function to create a new record.
+          update (function, optional): Function to update an existing record.
+          delete (function, optional): Function to delete a record.
+
+  // Example of an action handler signature:
+  // async (req, res) => {
+  //   try {
+  //     // Fetch data from your database
+  //     const records = await YourModel.find({});
+  //     res.success(records);
+  //   } catch (error) {
+  //     res.error(error);
+  //   }
+  // }
+
+  // Response object methods:
+  // res.success(data: any, count?: number)
+  //   Sends a successful response with the provided data.
+  //   count: Optional total number of records for pagination.
+  // res.error(error: Error | string)
+  //   Sends an error response.
+```
+
+---
+
+### Forest Admin Agent API Documentation
+
+Source: https://github.com/forestadmin/agent-nodejs/blob/main/packages/datasource-dummy/README.md
+
+This section details the core API methods provided by the Forest Admin Agent for Node.js, covering initialization, collection registration, and action handling.
+
+```APIDOC
+ForestAgent:
+  __init__(options: object)
+    Initializes the Forest Admin Agent.
+    Options:
+      projectUrl (string): The URL of your Forest Admin project.
+      authenticationToken (string): The authentication token for your project.
+      agentName (string, optional): The name of the agent.
+
+  collection(name: string, definition: object)
+    Registers a data collection (model) with Forest Admin.
+    Parameters:
+      name (string): The name of the collection (e.g., 'users', 'products').
+      definition (object): An object defining the collection's schema and actions.
+        schema (object): Defines the fields and their types for the collection.
+          Example: { name: 'string', email: 'string', createdAt: 'date' }
+        actions (object): Defines the operations that can be performed on the collection.
+          list (function): Function to fetch a list of records. Receives (req, res) and should call res.success(records) or res.error(error).
+          get (function, optional): Function to fetch a single record by ID.
+          create (function, optional): Function to create a new record.
+          update (function, optional): Function to update an existing record.
+          delete (function, optional): Function to delete a record.
+
+  // Example of an action handler signature:
+  // async (req, res) => {
+  //   try {
+  //     // Fetch data from your database
+  //     const records = await YourModel.find({});
+  //     res.success(records);
+  //   } catch (error) {
+  //     res.error(error);
+  //   }
+  // }
+
+  // Response object methods:
+  // res.success(data: any, count?: number)
+  //   Sends a successful response with the provided data.
+  //   count: Optional total number of records for pagination.
+  // res.error(error: Error | string)
+  //   Sends an error response.
+```
+
+---
+
+### Forest Admin Agent API Documentation
+
+Source: https://github.com/forestadmin/agent-nodejs/blob/main/packages/datasource-sql/README.md
+
+This section details the core API methods provided by the Forest Admin Agent for Node.js, covering initialization, collection registration, and action handling.
+
+```APIDOC
+ForestAgent:
+  __init__(options: object)
+    Initializes the Forest Admin Agent.
+    Options:
+      projectUrl (string): The URL of your Forest Admin project.
+      authenticationToken (string): The authentication token for your project.
+      agentName (string, optional): The name of the agent.
+
+  collection(name: string, definition: object)
+    Registers a data collection (model) with Forest Admin.
+    Parameters:
+      name (string): The name of the collection (e.g., 'users', 'products').
+      definition (object): An object defining the collection's schema and actions.
+        schema (object): Defines the fields and their types for the collection.
+          Example: { name: 'string', email: 'string', createdAt: 'date' }
+        actions (object): Defines the operations that can be performed on the collection.
+          list (function): Function to fetch a list of records. Receives (req, res) and should call res.success(records) or res.error(error).
+          get (function, optional): Function to fetch a single record by ID.
+          create (function, optional): Function to create a new record.
+          update (function, optional): Function to update an existing record.
+          delete (function, optional): Function to delete a record.
+
+  // Example of an action handler signature:
+  // async (req, res) => {
+  //   try {
+  //     // Fetch data from your database
+  //     const records = await YourModel.find({});
+  //     res.success(records);
+  //   } catch (error) {
+  //     res.error(error);
+  //   }
+  // }
+
+  // Response object methods:
+  // res.success(data: any, count?: number)
+  //   Sends a successful response with the provided data.
+  //   count: Optional total number of records for pagination.
+  // res.error(error: Error | string)
+  //   Sends an error response.
+```
+
+---
+
+### Forest Admin Agent API Documentation
+
+Source: https://github.com/forestadmin/agent-nodejs/blob/main/packages/datasource-customizer/README.md
+
+This section details the core API methods provided by the Forest Admin Agent for Node.js, covering initialization, collection registration, and action handling.
+
+```APIDOC
+ForestAgent:
+  __init__(options: object)
+    Initializes the Forest Admin Agent.
+    Options:
+      projectUrl (string): The URL of your Forest Admin project.
+      authenticationToken (string): The authentication token for your project.
+      agentName (string, optional): The name of the agent.
+
+  collection(name: string, definition: object)
+    Registers a data collection (model) with Forest Admin.
+    Parameters:
+      name (string): The name of the collection (e.g., 'users', 'products').
+      definition (object): An object defining the collection's schema and actions.
+        schema (object): Defines the fields and their types for the collection.
+          Example: { name: 'string', email: 'string', createdAt: 'date' }
+        actions (object): Defines the operations that can be performed on the collection.
+          list (function): Function to fetch a list of records. Receives (req, res) and should call res.success(records) or res.error(error).
+          get (function, optional): Function to fetch a single record by ID.
+          create (function, optional): Function to create a new record.
+          update (function, optional): Function to update an existing record.
+          delete (function, optional): Function to delete a record.
+
+  // Example of an action handler signature:
+  // async (req, res) => {
+  //   try {
+  //     // Fetch data from your database
+  //     const records = await YourModel.find({});
+  //     res.success(records);
+  //   } catch (error) {
+  //     res.error(error);
+  //   }
+  // }
+
+  // Response object methods:
+  // res.success(data: any, count?: number)
+  //   Sends a successful response with the provided data.
+  //   count: Optional total number of records for pagination.
+  // res.error(error: Error | string)
+  //   Sends an error response.
+```
+
+---
+
+### Forest Admin Agent API Documentation
+
+Source: https://github.com/forestadmin/agent-nodejs/blob/main/packages/plugin-export-advanced/README.md
+
+This section details the core API methods provided by the Forest Admin Agent for Node.js, covering initialization, collection registration, and action handling.
+
+```APIDOC
+ForestAgent:
+  __init__(options: object)
+    Initializes the Forest Admin Agent.
+    Options:
+      projectUrl (string): The URL of your Forest Admin project.
+      authenticationToken (string): The authentication token for your project.
+      agentName (string, optional): The name of the agent.
+
+  collection(name: string, definition: object)
+    Registers a data collection (model) with Forest Admin.
+    Parameters:
+      name (string): The name of the collection (e.g., 'users', 'products').
+      definition (object): An object defining the collection's schema and actions.
+        schema (object): Defines the fields and their types for the collection.
+          Example: { name: 'string', email: 'string', createdAt: 'date' }
+        actions (object): Defines the operations that can be performed on the collection.
+          list (function): Function to fetch a list of records. Receives (req, res) and should call res.success(records) or res.error(error).
+          get (function, optional): Function to fetch a single record by ID.
+          create (function, optional): Function to create a new record.
+          update (function, optional): Function to update an existing record.
+          delete (function, optional): Function to delete a record.
+
+  // Example of an action handler signature:
+  // async (req, res) => {
+  //   try {
+  //     // Fetch data from your database
+  //     const records = await YourModel.find({});
+  //     res.success(records);
+  //   } catch (error) {
+  //     res.error(error);
+  //   }
+  // }
+
+  // Response object methods:
+  // res.success(data: any, count?: number)
+  //   Sends a successful response with the provided data.
+  //   count: Optional total number of records for pagination.
+  // res.error(error: Error | string)
+  //   Sends an error response.
+```
+
+---
+
+### Forest Admin Agent API Documentation
+
+Source: https://github.com/forestadmin/agent-nodejs/blob/main/packages/datasource-mongo/README.md
+
+This section details the core API methods provided by the Forest Admin Agent for Node.js, covering initialization, collection registration, and action handling.
+
+```APIDOC
+ForestAgent:
+  __init__(options: object)
+    Initializes the Forest Admin Agent.
+    Options:
+      projectUrl (string): The URL of your Forest Admin project.
+      authenticationToken (string): The authentication token for your project.
+      agentName (string, optional): The name of the agent.
+
+  collection(name: string, definition: object)
+    Registers a data collection (model) with Forest Admin.
+    Parameters:
+      name (string): The name of the collection (e.g., 'users', 'products').
+      definition (object): An object defining the collection's schema and actions.
+        schema (object): Defines the fields and their types for the collection.
+          Example: { name: 'string', email: 'string', createdAt: 'date' }
+        actions (object): Defines the operations that can be performed on the collection.
+          list (function): Function to fetch a list of records. Receives (req, res) and should call res.success(records) or res.error(error).
+          get (function, optional): Function to fetch a single record by ID.
+          create (function, optional): Function to create a new record.
+          update (function, optional): Function to update an existing record.
+          delete (function, optional): Function to delete a record.
+
+  // Example of an action handler signature:
+  // async (req, res) => {
+  //   try {
+  //     // Fetch data from your database
+  //     const records = await YourModel.find({});
+  //     res.success(records);
+  //   } catch (error) {
+  //     res.error(error);
+  //   }
+  // }
+
+  // Response object methods:
+  // res.success(data: any, count?: number)
+  //   Sends a successful response with the provided data.
+  //   count: Optional total number of records for pagination.
+  // res.error(error: Error | string)
+  //   Sends an error response.
+```
+
+---
+
+### Collection Methods: addField
+
+Source: https://github.com/forestadmin/agent-nodejs/wiki/@forestadmin.agent.Collection
+
+Adds a new field to the collection definition. This method allows specifying column types, dependencies, and how to get values for the field.
+
+```javascript
+.addField('fullName', {
+   columnType: 'String',
+   dependencies: ['firstName', 'lastName'],
+   getValues: (records) => records.map(record => `${record.lastName} ${record.firstName}`),
+});
+```
+
+```APIDOC
+addField(name: string, definition: FieldDefinition<S, N>): Collection<S, N>
+
+  Parameters:
+    name: string - the name of the field
+    definition: FieldDefinition<S, N> - The definition of the field
+
+  Returns:
+    Collection<S, N> - The collection instance for chaining.
+
+  Defined in:
+    packages/agent/src/builder/collection.ts:188
+```
+
+---
+
+### Forest Admin Agent API Documentation
+
+Source: https://github.com/forestadmin/agent-nodejs/blob/main/packages/plugin-aws-s3/README.md
+
+This section details the core API methods provided by the Forest Admin Agent for Node.js, covering initialization, collection registration, and action handling.
+
+```APIDOC
+ForestAgent:
+  __init__(options: object)
+    Initializes the Forest Admin Agent.
+    Options:
+      projectUrl (string): The URL of your Forest Admin project.
+      authenticationToken (string): The authentication token for your project.
+      agentName (string, optional): The name of the agent.
+
+  collection(name: string, definition: object)
+    Registers a data collection (model) with Forest Admin.
+    Parameters:
+      name (string): The name of the collection (e.g., 'users', 'products').
+      definition (object): An object defining the collection's schema and actions.
+        schema (object): Defines the fields and their types for the collection.
+          Example: { name: 'string', email: 'string', createdAt: 'date' }
+        actions (object): Defines the operations that can be performed on the collection.
+          list (function): Function to fetch a list of records. Receives (req, res) and should call res.success(records) or res.error(error).
+          get (function, optional): Function to fetch a single record by ID.
+          create (function, optional): Function to create a new record.
+          update (function, optional): Function to update an existing record.
+          delete (function, optional): Function to delete a record.
+
+  // Example of an action handler signature:
+  // async (req, res) => {
+  //   try {
+  //     // Fetch data from your database
+  //     const records = await YourModel.find({});
+  //     res.success(records);
+  //   } catch (error) {
+  //     res.error(error);
+  //   }
+  // }
+
+  // Response object methods:
+  // res.success(data: any, count?: number)
+  //   Sends a successful response with the provided data.
+  //   count: Optional total number of records for pagination.
+  // res.error(error: Error | string)
+  //   Sends an error response.
+```
+
+---
+
+### Projection Interface Methods
+
+Source: https://github.com/forestadmin/agent-nodejs/wiki/@forestadmin.datasource-toolkit.Projection
+
+This section details the methods available on the Projection interface, including inherited methods from the Array prototype and specific methods like 'relations' and 'apply'. It outlines their parameters, return types, and definitions.
+
+```APIDOC
+Projection Interface:
+
+relations(): Record<string, Projection>
+  - Returns an object containing relations, where keys are relation names and values are Projection objects.
+  - Defined in: packages/datasource-toolkit/src/interfaces/query/projection/index.ts:11
+
+apply(records: RecordData[]): RecordData[]
+  - Applies the projection to a list of records.
+  - Parameters:
+    - records: An array of RecordData objects to apply the projection to.
+  - Returns: An array of RecordData objects after applying the projection.
+  - Defined in: packages/datasource-toolkit/src/interfaces/query/projection/index.ts:41
+
+[iterator](): IterableIterator<string>
+  - Provides an iterator for the projection elements.
+  - Returns: An IterableIterator yielding strings.
+  - Inherited from: Array.__@iterator@64783
+  - Defined in: node_modules/typescript/lib/lib.es2015.iterable.d.ts:60
+
+[unscopables](): Object
+  - Returns an object indicating which properties will be absent in a 'with' statement.
+  - Returns: An object with boolean flags for unscopable properties (e.g., copyWithin, entries).
+  - Inherited from: Array.__@unscopables@64785
+  - Defined in: node_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts:99
+
+at(index: number): string
+  - Retrieves an item at a specific index, supporting positive and negative integers.
+  - Parameters:
+    - index: The index of the item to retrieve. Negative values count from the end.
+  - Returns: The string item at the specified index.
+  - Inherited from: Array.at
+  - Defined in: node_modules/@types/node/globals.d.ts:86
+
+concat(...items: ConcatArray<string>[]): string[]
+  - Combines this array with other arrays or items.
+  - Parameters:
+    - ...items: Additional arrays or items to concatenate.
+  - Returns: A new array containing the combined elements.
+  - Inherited from: Array.concat
+  - Defined in: node_modules/typescript/lib/lib.es5.d.ts:1297
+
+concat(...items: (string | ConcatArray<string>)[]): string[]
+  - Combines this array with other arrays or items.
+  - Parameters:
+    - ...items: Additional arrays or items to concatenate.
+  - Returns: A new array containing the combined elements.
+  - Inherited from: Array.concat
+  - Defined in: node_modules/typescript/lib/lib.es5.d.ts:1303
+
+copyWithin(target: number, start: number, end?: number): Projection
+  - Copies a section of the array to another location within the same array.
+  - Parameters:
+    - target: The index to copy the sequence to.
+    - start: The index to begin the copy.
+    - end: The index to end the copy (exclusive).
+  - Returns: The Projection object itself after the copy operation.
+  - Inherited from: Array.copyWithin
+  - Defined in: node_modules/typescript/lib/lib.es2015.core.d.ts:64
+
+entries(): IterableIterator<[number, string]>
+  - Returns an iterable of key-value pairs for each element in the array.
+  - Returns: An IterableIterator yielding tuples of [index, value].
+  - Inherited from: Array.entries
+  - Defined in: node_modules/typescript/lib/lib.es2015.iterable.d.ts:65
+
+every<S extends string>(predicate: (value: string, index: number, array: string[]) => value is S, thisArg?: any): this is S[]
+  - Tests whether all elements in the array pass the test implemented by the provided function.
+  - Type parameters:
+    - S: The type of the elements in the array, constrained to string.
+  - Parameters:
+    - predicate: Function to test each element.
+    - thisArg: Object to use as 'this' when executing the predicate.
+  - Returns: True if all elements satisfy the test, false otherwise.
+  - Inherited from: Array.every
+
+```
+
+---
+
+### WebHookResult Type
+
+Source: https://github.com/forestadmin/agent-nodejs/wiki/@forestadmin.datasource-toolkit
+
+Defines the structure for a webhook result, including the body, headers, HTTP method, type, and URL. The body can be of any type, headers are a string-keyed object, and the method is restricted to GET or POST.
+
+```typescript
+type WebHookResult = {
+  body: unknown;
+  headers: { [key: string]: string };
+  method: "GET" | "POST";
+  type: "Webhook";
+  url: string;
+};
+```

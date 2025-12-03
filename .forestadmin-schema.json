@@ -1587,7 +1587,79 @@
       "segments": []
     },
     {
-      "actions": [],
+      "actions": [
+        {
+          "id": "merchants-0-add-new-merchant",
+          "name": "Add New Merchant",
+          "type": "global",
+          "baseUrl": null,
+          "endpoint": "/forest/_actions/merchants/0/add-new-merchant",
+          "httpMethod": "POST",
+          "redirect": null,
+          "download": false,
+          "fields": [
+            {
+              "field": "Business Name",
+              "label": "Business Name",
+              "description": "The name of the business",
+              "isRequired": true,
+              "type": "String"
+            },
+            {
+              "field": "Business Type",
+              "label": "Business Type",
+              "description": "Type of business",
+              "isRequired": true,
+              "type": "Enum",
+              "enums": ["goods", "services"],
+              "defaultValue": null
+            },
+            {
+              "field": "Email",
+              "label": "Email",
+              "description": "Email address for the user account",
+              "isRequired": true,
+              "type": "String"
+            },
+            {
+              "field": "First Name",
+              "label": "First Name",
+              "description": "First name of the user",
+              "isRequired": true,
+              "type": "String"
+            },
+            {
+              "field": "Last Name",
+              "label": "Last Name",
+              "description": "Last name of the user",
+              "isRequired": true,
+              "type": "String"
+            },
+            {
+              "field": "Country",
+              "label": "Country",
+              "description": "Country code (e.g., FR, US) for the user",
+              "isRequired": true,
+              "type": "String"
+            },
+            {
+              "field": "Password",
+              "label": "Password",
+              "description": "Password for the user account (minimum 6 characters)",
+              "isRequired": true,
+              "type": "String"
+            },
+            {
+              "field": "Company Number (SIRET)",
+              "label": "Company Number (SIRET)",
+              "description": "Company registration number (SIRET) required for MangoPay LEGAL user",
+              "isRequired": true,
+              "type": "String"
+            }
+          ],
+          "hooks": {"load": false, "change": ["changeHook"]}
+        }
+      ],
       "fields": [
         {
           "defaultValue": null,
@@ -3233,7 +3305,7 @@
         },
         {
           "defaultValue": null,
-          "enums": ["client", "employee", "reseller"],
+          "enums": ["bde", "client", "employee", "reseller"],
           "field": "user_type",
           "integration": null,
           "inverseOf": null,
@@ -3371,20 +3443,7 @@
       "segments": []
     },
     {
-      "actions": [
-        {
-          "id": "users-0-send-email",
-          "name": "Send email",
-          "type": "single",
-          "baseUrl": null,
-          "endpoint": "/forest/_actions/users/0/send-email",
-          "httpMethod": "POST",
-          "redirect": null,
-          "download": false,
-          "fields": [],
-          "hooks": {"load": false, "change": ["changeHook"]}
-        }
-      ],
+      "actions": [],
       "fields": [
         {
           "defaultValue": null,
@@ -3782,7 +3841,7 @@
         },
         {
           "defaultValue": null,
-          "enums": ["client", "employee", "reseller"],
+          "enums": ["bde", "client", "employee", "reseller"],
           "field": "user_type",
           "integration": null,
           "inverseOf": null,

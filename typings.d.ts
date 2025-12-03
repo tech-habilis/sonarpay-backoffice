@@ -246,7 +246,7 @@ export type Schema = {
       'merchant:user:phone': string | null;
       'merchant:user:referral_code': string;
       'merchant:user:updated_at': string;
-      'merchant:user:user_type': 'client' | 'employee' | 'reseller';
+      'merchant:user:user_type': 'bde' | 'client' | 'employee' | 'reseller';
       'transaction:merchant:address_line1': string | null;
       'transaction:merchant:address_line2': string | null;
       'transaction:merchant:business_name': string;
@@ -291,7 +291,7 @@ export type Schema = {
       'transaction:user:phone': string | null;
       'transaction:user:referral_code': string;
       'transaction:user:updated_at': string;
-      'transaction:user:user_type': 'client' | 'employee' | 'reseller';
+      'transaction:user:user_type': 'bde' | 'client' | 'employee' | 'reseller';
       'bon_plan:merchant:user:avatar_url': string | null;
       'bon_plan:merchant:user:country': string;
       'bon_plan:merchant:user:created_at': string;
@@ -306,7 +306,7 @@ export type Schema = {
       'bon_plan:merchant:user:phone': string | null;
       'bon_plan:merchant:user:referral_code': string;
       'bon_plan:merchant:user:updated_at': string;
-      'bon_plan:merchant:user:user_type': 'client' | 'employee' | 'reseller';
+      'bon_plan:merchant:user:user_type': 'bde' | 'client' | 'employee' | 'reseller';
       'merchant:user:referral:activated_at': string | null;
       'merchant:user:referral:commission_rate': number | null;
       'merchant:user:referral:created_at': string | null;
@@ -331,7 +331,7 @@ export type Schema = {
       'transaction:merchant:user:phone': string | null;
       'transaction:merchant:user:referral_code': string;
       'transaction:merchant:user:updated_at': string;
-      'transaction:merchant:user:user_type': 'client' | 'employee' | 'reseller';
+      'transaction:merchant:user:user_type': 'bde' | 'client' | 'employee' | 'reseller';
       'transaction:referral:referred:avatar_url': string | null;
       'transaction:referral:referred:country': string;
       'transaction:referral:referred:created_at': string;
@@ -346,7 +346,7 @@ export type Schema = {
       'transaction:referral:referred:phone': string | null;
       'transaction:referral:referred:referral_code': string;
       'transaction:referral:referred:updated_at': string;
-      'transaction:referral:referred:user_type': 'client' | 'employee' | 'reseller';
+      'transaction:referral:referred:user_type': 'bde' | 'client' | 'employee' | 'reseller';
       'transaction:referral:referrer:avatar_url': string | null;
       'transaction:referral:referrer:country': string;
       'transaction:referral:referrer:created_at': string;
@@ -361,7 +361,7 @@ export type Schema = {
       'transaction:referral:referrer:phone': string | null;
       'transaction:referral:referrer:referral_code': string;
       'transaction:referral:referrer:updated_at': string;
-      'transaction:referral:referrer:user_type': 'client' | 'employee' | 'reseller';
+      'transaction:referral:referrer:user_type': 'bde' | 'client' | 'employee' | 'reseller';
       'transaction:referral:referrer_merchant:address_line1': string | null;
       'transaction:referral:referrer_merchant:address_line2': string | null;
       'transaction:referral:referrer_merchant:business_name': string;
@@ -454,7 +454,7 @@ export type Schema = {
       'merchant:user:phone': string | null;
       'merchant:user:referral_code': string;
       'merchant:user:updated_at': string;
-      'merchant:user:user_type': 'client' | 'employee' | 'reseller';
+      'merchant:user:user_type': 'bde' | 'client' | 'employee' | 'reseller';
       'merchant:user:referral:activated_at': string | null;
       'merchant:user:referral:commission_rate': number | null;
       'merchant:user:referral:created_at': string | null;
@@ -539,7 +539,7 @@ export type Schema = {
       'user:phone': string | null;
       'user:referral_code': string;
       'user:updated_at': string;
-      'user:user_type': 'client' | 'employee' | 'reseller';
+      'user:user_type': 'bde' | 'client' | 'employee' | 'reseller';
       'event:bde:avatar_url': string | null;
       'event:bde:country': string;
       'event:bde:created_at': string;
@@ -554,7 +554,7 @@ export type Schema = {
       'event:bde:phone': string | null;
       'event:bde:referral_code': string;
       'event:bde:updated_at': string;
-      'event:bde:user_type': 'client' | 'employee' | 'reseller';
+      'event:bde:user_type': 'bde' | 'client' | 'employee' | 'reseller';
       'event:merchant:address_line1': string | null;
       'event:merchant:address_line2': string | null;
       'event:merchant:business_name': string;
@@ -619,7 +619,7 @@ export type Schema = {
       'transaction:user:phone': string | null;
       'transaction:user:referral_code': string;
       'transaction:user:updated_at': string;
-      'transaction:user:user_type': 'client' | 'employee' | 'reseller';
+      'transaction:user:user_type': 'bde' | 'client' | 'employee' | 'reseller';
       'user:referral:activated_at': string | null;
       'user:referral:commission_rate': number | null;
       'user:referral:created_at': string | null;
@@ -654,7 +654,7 @@ export type Schema = {
       'event:merchant:user:phone': string | null;
       'event:merchant:user:referral_code': string;
       'event:merchant:user:updated_at': string;
-      'event:merchant:user:user_type': 'client' | 'employee' | 'reseller';
+      'event:merchant:user:user_type': 'bde' | 'client' | 'employee' | 'reseller';
       'transaction:merchant:user:avatar_url': string | null;
       'transaction:merchant:user:country': string;
       'transaction:merchant:user:created_at': string;
@@ -669,7 +669,7 @@ export type Schema = {
       'transaction:merchant:user:phone': string | null;
       'transaction:merchant:user:referral_code': string;
       'transaction:merchant:user:updated_at': string;
-      'transaction:merchant:user:user_type': 'client' | 'employee' | 'reseller';
+      'transaction:merchant:user:user_type': 'bde' | 'client' | 'employee' | 'reseller';
       'transaction:referral:referred:avatar_url': string | null;
       'transaction:referral:referred:country': string;
       'transaction:referral:referred:created_at': string;
@@ -684,7 +684,7 @@ export type Schema = {
       'transaction:referral:referred:phone': string | null;
       'transaction:referral:referred:referral_code': string;
       'transaction:referral:referred:updated_at': string;
-      'transaction:referral:referred:user_type': 'client' | 'employee' | 'reseller';
+      'transaction:referral:referred:user_type': 'bde' | 'client' | 'employee' | 'reseller';
       'transaction:referral:referrer:avatar_url': string | null;
       'transaction:referral:referrer:country': string;
       'transaction:referral:referrer:created_at': string;
@@ -699,7 +699,7 @@ export type Schema = {
       'transaction:referral:referrer:phone': string | null;
       'transaction:referral:referrer:referral_code': string;
       'transaction:referral:referrer:updated_at': string;
-      'transaction:referral:referrer:user_type': 'client' | 'employee' | 'reseller';
+      'transaction:referral:referrer:user_type': 'bde' | 'client' | 'employee' | 'reseller';
       'transaction:referral:referrer_merchant:address_line1': string | null;
       'transaction:referral:referrer_merchant:address_line2': string | null;
       'transaction:referral:referrer_merchant:business_name': string;
@@ -744,7 +744,7 @@ export type Schema = {
       'user:referral:referrer:phone': string | null;
       'user:referral:referrer:referral_code': string;
       'user:referral:referrer:updated_at': string;
-      'user:referral:referrer:user_type': 'client' | 'employee' | 'reseller';
+      'user:referral:referrer:user_type': 'bde' | 'client' | 'employee' | 'reseller';
       'user:referral:referrer_merchant:address_line1': string | null;
       'user:referral:referrer_merchant:address_line2': string | null;
       'user:referral:referrer_merchant:business_name': string;
@@ -809,7 +809,7 @@ export type Schema = {
       'bde:phone': string | null;
       'bde:referral_code': string;
       'bde:updated_at': string;
-      'bde:user_type': 'client' | 'employee' | 'reseller';
+      'bde:user_type': 'bde' | 'client' | 'employee' | 'reseller';
       'merchant:address_line1': string | null;
       'merchant:address_line2': string | null;
       'merchant:business_name': string;
@@ -854,7 +854,7 @@ export type Schema = {
       'merchant:user:phone': string | null;
       'merchant:user:referral_code': string;
       'merchant:user:updated_at': string;
-      'merchant:user:user_type': 'client' | 'employee' | 'reseller';
+      'merchant:user:user_type': 'bde' | 'client' | 'employee' | 'reseller';
       'bde:referral:referrer:avatar_url': string | null;
       'bde:referral:referrer:country': string;
       'bde:referral:referrer:created_at': string;
@@ -869,7 +869,7 @@ export type Schema = {
       'bde:referral:referrer:phone': string | null;
       'bde:referral:referrer:referral_code': string;
       'bde:referral:referrer:updated_at': string;
-      'bde:referral:referrer:user_type': 'client' | 'employee' | 'reseller';
+      'bde:referral:referrer:user_type': 'bde' | 'client' | 'employee' | 'reseller';
       'bde:referral:referrer_merchant:address_line1': string | null;
       'bde:referral:referrer_merchant:address_line2': string | null;
       'bde:referral:referrer_merchant:business_name': string;
@@ -961,7 +961,7 @@ export type Schema = {
       'employee:phone': string | null;
       'employee:referral_code': string;
       'employee:updated_at': string;
-      'employee:user_type': 'client' | 'employee' | 'reseller';
+      'employee:user_type': 'bde' | 'client' | 'employee' | 'reseller';
       'merchant:address_line1': string | null;
       'merchant:address_line2': string | null;
       'merchant:business_name': string;
@@ -996,7 +996,7 @@ export type Schema = {
       'user:phone': string | null;
       'user:referral_code': string;
       'user:updated_at': string;
-      'user:user_type': 'client' | 'employee' | 'reseller';
+      'user:user_type': 'bde' | 'client' | 'employee' | 'reseller';
       'employee:referral:activated_at': string | null;
       'employee:referral:commission_rate': number | null;
       'employee:referral:created_at': string | null;
@@ -1021,7 +1021,7 @@ export type Schema = {
       'merchant:user:phone': string | null;
       'merchant:user:referral_code': string;
       'merchant:user:updated_at': string;
-      'merchant:user:user_type': 'client' | 'employee' | 'reseller';
+      'merchant:user:user_type': 'bde' | 'client' | 'employee' | 'reseller';
       'user:referral:activated_at': string | null;
       'user:referral:commission_rate': number | null;
       'user:referral:created_at': string | null;
@@ -1046,7 +1046,7 @@ export type Schema = {
       'employee:referral:referrer:phone': string | null;
       'employee:referral:referrer:referral_code': string;
       'employee:referral:referrer:updated_at': string;
-      'employee:referral:referrer:user_type': 'client' | 'employee' | 'reseller';
+      'employee:referral:referrer:user_type': 'bde' | 'client' | 'employee' | 'reseller';
       'employee:referral:referrer_merchant:address_line1': string | null;
       'employee:referral:referrer_merchant:address_line2': string | null;
       'employee:referral:referrer_merchant:business_name': string;
@@ -1091,7 +1091,7 @@ export type Schema = {
       'user:referral:referrer:phone': string | null;
       'user:referral:referrer:referral_code': string;
       'user:referral:referrer:updated_at': string;
-      'user:referral:referrer:user_type': 'client' | 'employee' | 'reseller';
+      'user:referral:referrer:user_type': 'bde' | 'client' | 'employee' | 'reseller';
       'user:referral:referrer_merchant:address_line1': string | null;
       'user:referral:referrer_merchant:address_line2': string | null;
       'user:referral:referrer_merchant:business_name': string;
@@ -1166,7 +1166,7 @@ export type Schema = {
       'merchant:user:phone': string | null;
       'merchant:user:referral_code': string;
       'merchant:user:updated_at': string;
-      'merchant:user:user_type': 'client' | 'employee' | 'reseller';
+      'merchant:user:user_type': 'bde' | 'client' | 'employee' | 'reseller';
       'merchant:user:referral:activated_at': string | null;
       'merchant:user:referral:commission_rate': number | null;
       'merchant:user:referral:created_at': string | null;
@@ -1220,7 +1220,7 @@ export type Schema = {
       'user:phone': string | null;
       'user:referral_code': string;
       'user:updated_at': string;
-      'user:user_type': 'client' | 'employee' | 'reseller';
+      'user:user_type': 'bde' | 'client' | 'employee' | 'reseller';
       'user:referral:activated_at': string | null;
       'user:referral:commission_rate': number | null;
       'user:referral:created_at': string | null;
@@ -1245,7 +1245,7 @@ export type Schema = {
       'user:referral:referrer:phone': string | null;
       'user:referral:referrer:referral_code': string;
       'user:referral:referrer:updated_at': string;
-      'user:referral:referrer:user_type': 'client' | 'employee' | 'reseller';
+      'user:referral:referrer:user_type': 'bde' | 'client' | 'employee' | 'reseller';
       'user:referral:referrer_merchant:address_line1': string | null;
       'user:referral:referrer_merchant:address_line2': string | null;
       'user:referral:referrer_merchant:business_name': string;
@@ -1323,7 +1323,7 @@ export type Schema = {
       'user:phone': string | null;
       'user:referral_code': string;
       'user:updated_at': string;
-      'user:user_type': 'client' | 'employee' | 'reseller';
+      'user:user_type': 'bde' | 'client' | 'employee' | 'reseller';
       'merchant_through_merchant_id:user:avatar_url': string | null;
       'merchant_through_merchant_id:user:country': string;
       'merchant_through_merchant_id:user:created_at': string;
@@ -1338,7 +1338,7 @@ export type Schema = {
       'merchant_through_merchant_id:user:phone': string | null;
       'merchant_through_merchant_id:user:referral_code': string;
       'merchant_through_merchant_id:user:updated_at': string;
-      'merchant_through_merchant_id:user:user_type': 'client' | 'employee' | 'reseller';
+      'merchant_through_merchant_id:user:user_type': 'bde' | 'client' | 'employee' | 'reseller';
       'user:referral:activated_at': string | null;
       'user:referral:commission_rate': number | null;
       'user:referral:created_at': string | null;
@@ -1373,7 +1373,7 @@ export type Schema = {
       'user:referral:referrer:phone': string | null;
       'user:referral:referrer:referral_code': string;
       'user:referral:referrer:updated_at': string;
-      'user:referral:referrer:user_type': 'client' | 'employee' | 'reseller';
+      'user:referral:referrer:user_type': 'bde' | 'client' | 'employee' | 'reseller';
       'user:referral:referrer_merchant:address_line1': string | null;
       'user:referral:referrer_merchant:address_line2': string | null;
       'user:referral:referrer_merchant:business_name': string;
@@ -1452,7 +1452,7 @@ export type Schema = {
       'referred:phone': string | null;
       'referred:referral_code': string;
       'referred:updated_at': string;
-      'referred:user_type': 'client' | 'employee' | 'reseller';
+      'referred:user_type': 'bde' | 'client' | 'employee' | 'reseller';
       'referrer:avatar_url': string | null;
       'referrer:country': string;
       'referrer:created_at': string;
@@ -1467,7 +1467,7 @@ export type Schema = {
       'referrer:phone': string | null;
       'referrer:referral_code': string;
       'referrer:updated_at': string;
-      'referrer:user_type': 'client' | 'employee' | 'reseller';
+      'referrer:user_type': 'bde' | 'client' | 'employee' | 'reseller';
       'referrer_merchant:address_line1': string | null;
       'referrer_merchant:address_line2': string | null;
       'referrer_merchant:business_name': string;
@@ -1512,7 +1512,7 @@ export type Schema = {
       'referrer_merchant:user:phone': string | null;
       'referrer_merchant:user:referral_code': string;
       'referrer_merchant:user:updated_at': string;
-      'referrer_merchant:user:user_type': 'client' | 'employee' | 'reseller';
+      'referrer_merchant:user:user_type': 'bde' | 'client' | 'employee' | 'reseller';
       'referrer:referral:referrer:avatar_url': string | null;
       'referrer:referral:referrer:country': string;
       'referrer:referral:referrer:created_at': string;
@@ -1527,7 +1527,7 @@ export type Schema = {
       'referrer:referral:referrer:phone': string | null;
       'referrer:referral:referrer:referral_code': string;
       'referrer:referral:referrer:updated_at': string;
-      'referrer:referral:referrer:user_type': 'client' | 'employee' | 'reseller';
+      'referrer:referral:referrer:user_type': 'bde' | 'client' | 'employee' | 'reseller';
       'referrer:referral:referrer_merchant:address_line1': string | null;
       'referrer:referral:referrer_merchant:address_line2': string | null;
       'referrer:referral:referrer_merchant:business_name': string;
@@ -1632,7 +1632,7 @@ export type Schema = {
       'user:phone': string | null;
       'user:referral_code': string;
       'user:updated_at': string;
-      'user:user_type': 'client' | 'employee' | 'reseller';
+      'user:user_type': 'bde' | 'client' | 'employee' | 'reseller';
       'merchant:user:avatar_url': string | null;
       'merchant:user:country': string;
       'merchant:user:created_at': string;
@@ -1647,7 +1647,7 @@ export type Schema = {
       'merchant:user:phone': string | null;
       'merchant:user:referral_code': string;
       'merchant:user:updated_at': string;
-      'merchant:user:user_type': 'client' | 'employee' | 'reseller';
+      'merchant:user:user_type': 'bde' | 'client' | 'employee' | 'reseller';
       'referral:referred:avatar_url': string | null;
       'referral:referred:country': string;
       'referral:referred:created_at': string;
@@ -1662,7 +1662,7 @@ export type Schema = {
       'referral:referred:phone': string | null;
       'referral:referred:referral_code': string;
       'referral:referred:updated_at': string;
-      'referral:referred:user_type': 'client' | 'employee' | 'reseller';
+      'referral:referred:user_type': 'bde' | 'client' | 'employee' | 'reseller';
       'referral:referrer:avatar_url': string | null;
       'referral:referrer:country': string;
       'referral:referrer:created_at': string;
@@ -1677,7 +1677,7 @@ export type Schema = {
       'referral:referrer:phone': string | null;
       'referral:referrer:referral_code': string;
       'referral:referrer:updated_at': string;
-      'referral:referrer:user_type': 'client' | 'employee' | 'reseller';
+      'referral:referrer:user_type': 'bde' | 'client' | 'employee' | 'reseller';
       'referral:referrer_merchant:address_line1': string | null;
       'referral:referrer_merchant:address_line2': string | null;
       'referral:referrer_merchant:business_name': string;
@@ -1742,7 +1742,7 @@ export type Schema = {
       'referral:referrer_merchant:user:phone': string | null;
       'referral:referrer_merchant:user:referral_code': string;
       'referral:referrer_merchant:user:updated_at': string;
-      'referral:referrer_merchant:user:user_type': 'client' | 'employee' | 'reseller';
+      'referral:referrer_merchant:user:user_type': 'bde' | 'client' | 'employee' | 'reseller';
       'user:referral:referrer:avatar_url': string | null;
       'user:referral:referrer:country': string;
       'user:referral:referrer:created_at': string;
@@ -1757,7 +1757,7 @@ export type Schema = {
       'user:referral:referrer:phone': string | null;
       'user:referral:referrer:referral_code': string;
       'user:referral:referrer:updated_at': string;
-      'user:referral:referrer:user_type': 'client' | 'employee' | 'reseller';
+      'user:referral:referrer:user_type': 'bde' | 'client' | 'employee' | 'reseller';
       'user:referral:referrer_merchant:address_line1': string | null;
       'user:referral:referrer_merchant:address_line2': string | null;
       'user:referral:referrer_merchant:business_name': string;
@@ -1789,7 +1789,7 @@ export type Schema = {
       'last_name': string | null;
       'mangopay_user_id': string | null;
       'user_created_at': string | null;
-      'user_type': 'client' | 'employee' | 'reseller' | null;
+      'user_type': 'bde' | 'client' | 'employee' | 'reseller' | null;
       'user_updated_at': string | null;
     };
     nested: {};
@@ -1827,7 +1827,7 @@ export type Schema = {
       'user:phone': string | null;
       'user:referral_code': string;
       'user:updated_at': string;
-      'user:user_type': 'client' | 'employee' | 'reseller';
+      'user:user_type': 'bde' | 'client' | 'employee' | 'reseller';
       'user:referral:activated_at': string | null;
       'user:referral:commission_rate': number | null;
       'user:referral:created_at': string | null;
@@ -1852,7 +1852,7 @@ export type Schema = {
       'user:referral:referrer:phone': string | null;
       'user:referral:referrer:referral_code': string;
       'user:referral:referrer:updated_at': string;
-      'user:referral:referrer:user_type': 'client' | 'employee' | 'reseller';
+      'user:referral:referrer:user_type': 'bde' | 'client' | 'employee' | 'reseller';
       'user:referral:referrer_merchant:address_line1': string | null;
       'user:referral:referrer_merchant:address_line2': string | null;
       'user:referral:referrer_merchant:business_name': string;
@@ -1891,7 +1891,7 @@ export type Schema = {
       'phone': string | null;
       'referral_code': string;
       'updated_at': string;
-      'user_type': 'client' | 'employee' | 'reseller';
+      'user_type': 'bde' | 'client' | 'employee' | 'reseller';
     };
     nested: {
       'referral': Schema['referrals']['plain'] & Schema['referrals']['nested'];
@@ -1921,7 +1921,7 @@ export type Schema = {
       'referral:referrer:phone': string | null;
       'referral:referrer:referral_code': string;
       'referral:referrer:updated_at': string;
-      'referral:referrer:user_type': 'client' | 'employee' | 'reseller';
+      'referral:referrer:user_type': 'bde' | 'client' | 'employee' | 'reseller';
       'referral:referrer_merchant:address_line1': string | null;
       'referral:referrer_merchant:address_line2': string | null;
       'referral:referrer_merchant:business_name': string;
@@ -1966,7 +1966,7 @@ export type Schema = {
       'referral:referrer_merchant:user:phone': string | null;
       'referral:referrer_merchant:user:referral_code': string;
       'referral:referrer_merchant:user:updated_at': string;
-      'referral:referrer_merchant:user:user_type': 'client' | 'employee' | 'reseller';
+      'referral:referrer_merchant:user:user_type': 'bde' | 'client' | 'employee' | 'reseller';
     };
   };
   'wallets': {
@@ -1998,7 +1998,7 @@ export type Schema = {
       'user:phone': string | null;
       'user:referral_code': string;
       'user:updated_at': string;
-      'user:user_type': 'client' | 'employee' | 'reseller';
+      'user:user_type': 'bde' | 'client' | 'employee' | 'reseller';
       'user:referral:activated_at': string | null;
       'user:referral:commission_rate': number | null;
       'user:referral:created_at': string | null;
@@ -2023,7 +2023,7 @@ export type Schema = {
       'user:referral:referrer:phone': string | null;
       'user:referral:referrer:referral_code': string;
       'user:referral:referrer:updated_at': string;
-      'user:referral:referrer:user_type': 'client' | 'employee' | 'reseller';
+      'user:referral:referrer:user_type': 'bde' | 'client' | 'employee' | 'reseller';
       'user:referral:referrer_merchant:address_line1': string | null;
       'user:referral:referrer_merchant:address_line2': string | null;
       'user:referral:referrer_merchant:business_name': string;
