@@ -44,6 +44,12 @@ export class MangoPayUserService {
       businessName: string;
       siret: string | null;
       userId: string;
+      address?: {
+        addressLine1?: string;
+        city?: string;
+        postalCode?: string;
+        country: string;
+      };
     }
   ): Promise<string> {
     console.log(
@@ -78,10 +84,11 @@ export class MangoPayUserService {
 
     // Prepare address - use merchant address if available, otherwise use defaults
     const address = {
-      addressLine1: "Business address to be provided",
-      city: "Paris",
-      postalCode: "75001",
-      country: country,
+      addressLine1:
+        merchantData.address?.addressLine1 || "Business address to be provided",
+      city: merchantData.address?.city || "Paris",
+      postalCode: merchantData.address?.postalCode || "75001",
+      country: merchantData.address?.country || country,
     };
 
     const createUserParams: CreateMangoPayUserParams = {

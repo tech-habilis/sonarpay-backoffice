@@ -77,6 +77,24 @@ export function registerCreateMerchantAction(agent: Agent<Schema>) {
           description:
             "Company registration number (SIRET) required for MangoPay LEGAL user",
         },
+        {
+          label: "Address Line 1",
+          type: "String",
+          isRequired: false,
+          description: "Business address line 1",
+        },
+        {
+          label: "City",
+          type: "String",
+          isRequired: false,
+          description: "City for the business address",
+        },
+        {
+          label: "Postal Code",
+          type: "String",
+          isRequired: false,
+          description: "Postal code for the business address",
+        },
       ],
       execute: async (context, resultBuilder) => {
         try {
@@ -94,6 +112,11 @@ export function registerCreateMerchantAction(agent: Agent<Schema>) {
           const country = formValues["Country"] as string;
           const password = formValues["Password"] as string;
           const companyNumber = formValues["Company Number (SIRET)"] as string;
+          const addressLine1 = formValues["Address Line 1"] as
+            | string
+            | undefined;
+          const city = formValues["City"] as string | undefined;
+          const postalCode = formValues["Postal Code"] as string | undefined;
 
           // Validate required fields
           if (
@@ -300,12 +323,26 @@ export function registerCreateMerchantAction(agent: Agent<Schema>) {
               "🔍 [create-merchant] MangoPayUserService instance created"
             );
 
+            // Build address object only if at least one field is provided
+            const hasAddressData =
+              (addressLine1 && addressLine1.trim()) ||
+              (city && city.trim()) ||
+              (postalCode && postalCode.trim());
+
             mangopayUserId = await mangoPayUserService.createUserFromData(
               createdUser as Schema["users"]["plain"],
               {
                 businessName,
                 siret: companyNumber,
                 userId: createdUser.id,
+                address: hasAddressData
+                  ? {
+                      addressLine1: addressLine1?.trim() || undefined,
+                      city: city?.trim() || undefined,
+                      postalCode: postalCode?.trim() || undefined,
+                      country: country,
+                    }
+                  : undefined,
               }
             );
 
@@ -427,6 +464,10 @@ export function registerCreateMerchantAction(agent: Agent<Schema>) {
                   mangopay_merchant_id: mangopayUserId,
                   mangopay_wallet_id: mangopayWalletId,
                   siret: companyNumber,
+                  address_line1: addressLine1 || null,
+                  city: city || null,
+                  postal_code: postalCode || null,
+                  country: country || null,
                   created_at: now,
                   updated_at: now,
                 })
