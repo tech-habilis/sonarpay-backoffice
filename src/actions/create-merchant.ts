@@ -41,6 +41,13 @@ export function registerCreateMerchantAction(agent: Agent<Schema>) {
           description: "Type of business",
         },
         {
+          label: "Merchant Type",
+          type: "Enum",
+          enumValues: ["bde", "reseller"],
+          isRequired: true,
+          description: "Type of merchant (BDE or Reseller)",
+        },
+        {
           label: "Email",
           type: "String",
           isRequired: true,
@@ -106,6 +113,9 @@ export function registerCreateMerchantAction(agent: Agent<Schema>) {
           const businessType = formValues["Business Type"] as
             | "goods"
             | "services";
+          const merchantType = formValues["Merchant Type"] as
+            | "bde"
+            | "reseller";
           const email = formValues["Email"] as string;
           const firstName = formValues["First Name"] as string;
           const lastName = formValues["Last Name"] as string;
@@ -122,6 +132,7 @@ export function registerCreateMerchantAction(agent: Agent<Schema>) {
           if (
             !businessName ||
             !businessType ||
+            !merchantType ||
             !email ||
             !firstName ||
             !lastName ||
@@ -271,7 +282,7 @@ export function registerCreateMerchantAction(agent: Agent<Schema>) {
                   first_name: firstName,
                   last_name: lastName,
                   country: country,
-                  user_type: "reseller", // Using "reseller" as per schema type definition
+                  user_type: merchantType, // Use the selected merchant type (bde or reseller)
                   referral_code: userReferralCode!,
                   is_active: true,
                   kyc_status: "pending",

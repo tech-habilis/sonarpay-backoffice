@@ -1615,6 +1615,15 @@
               "defaultValue": null
             },
             {
+              "field": "Merchant Type",
+              "label": "Merchant Type",
+              "description": "Type of merchant (BDE or Reseller)",
+              "isRequired": true,
+              "type": "Enum",
+              "enums": ["bde", "reseller"],
+              "defaultValue": null
+            },
+            {
               "field": "Email",
               "label": "Email",
               "description": "Email address for the user account",
@@ -1654,6 +1663,27 @@
               "label": "Company Number (SIRET)",
               "description": "Company registration number (SIRET) required for MangoPay LEGAL user",
               "isRequired": true,
+              "type": "String"
+            },
+            {
+              "field": "Address Line 1",
+              "label": "Address Line 1",
+              "description": "Business address line 1",
+              "isRequired": false,
+              "type": "String"
+            },
+            {
+              "field": "City",
+              "label": "City",
+              "description": "City for the business address",
+              "isRequired": false,
+              "type": "String"
+            },
+            {
+              "field": "Postal Code",
+              "label": "Postal Code",
+              "description": "Postal code for the business address",
+              "isRequired": false,
               "type": "String"
             }
           ],
@@ -4189,6 +4219,6 @@
     "liana": "forest-nodejs-agent",
     "liana_version": "1.66.0",
     "liana_features": null,
-    "stack": {"engine": "nodejs", "engine_version": "22.15.0"}
+    "stack": {"engine": "nodejs", "engine_version": "24.11.1"}
   }
 }
