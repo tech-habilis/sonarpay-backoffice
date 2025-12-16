@@ -1,11 +1,12 @@
 // eslint-disable-next-line @typescript-eslint/no-require-imports
 const MangoPay = require("mangopay4-nodejs-sdk");
 
-const MANGOPAY_CLIENT_ID = process.env.MANGOPAY_CLIENT_ID || "sonarpaydev";
-const MANGOPAY_CLIENT_API_KEY = process.env.MANGOPAY_CLIENT_API_KEY || "";
-const MANGOPAY_BASE_URL =
-  process.env.MANGOPAY_BASE_URL || "https://api.sandbox.mangopay.com";
-const IS_DEVELOPMENT = process.env.NODE_ENV !== "production";
+import {
+  MANGOPAY_CLIENT_ID,
+  MANGOPAY_CLIENT_API_KEY,
+  MANGOPAY_BASE_URL,
+  IS_DEVELOPMENT,
+} from "../utils/constants";
 
 // MangoPay SDK Configuration
 export const MANGOPAY_CONFIG = {
